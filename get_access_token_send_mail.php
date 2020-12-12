@@ -2,7 +2,6 @@
 $client_id = '';
 $client_secret = '';
 $api_key = '';
-
 if (isset($_GET['code'])) {
     // try to get an access token
     $code = $_GET['code'];
