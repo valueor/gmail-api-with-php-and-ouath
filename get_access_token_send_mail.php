@@ -14,6 +14,7 @@ if (isset($_GET['code'])) {
         "grant_type" => "authorization_code"
     );
 
+
     $ch = curl_init();
     curl_setopt($ch, constant("CURLOPT_" . 'URL'), $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    //요청 결과를 문자열로 반환
